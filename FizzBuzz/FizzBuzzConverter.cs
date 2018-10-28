@@ -9,6 +9,9 @@ namespace FizzBuzz
 
         public string Convert(int number)
         {
+            if (IsDivisibleByThree(number) && IsDivisibleByFive(number))
+                return _fizz + _buzz;
+
             if (IsDivisibleByThree(number))
                 return _fizz;
 
