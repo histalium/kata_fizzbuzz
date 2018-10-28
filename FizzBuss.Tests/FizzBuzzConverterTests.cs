@@ -16,5 +16,16 @@ namespace FizzBuss.Tests
 
             Assert.Equal("1", convertedNumber);
         }
+
+        [Fact]
+        public void WhenDivisibleByThree_ThenConvertToFizz()
+        {
+            var converter = new FizzBuzzConverter();
+            var number = 3;
+
+            var convertedNumber = converter.Convert(number);
+
+            Assert.Equal("Fizz", convertedNumber);
+        }
     }
 }
