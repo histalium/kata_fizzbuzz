@@ -27,5 +27,16 @@ namespace FizzBuss.Tests
 
             Assert.Equal("Fizz", convertedNumber);
         }
+
+        [Fact]
+        public void WhenDivisibleByFive_ThenConvertToBuzz()
+        {
+            var converter = new FizzBuzzConverter();
+            var number = 5;
+
+            var convertedNumber = converter.Convert(number);
+
+            Assert.Equal("Buzz", convertedNumber);
+        }
     }
 }
